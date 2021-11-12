@@ -1,0 +1,51 @@
+.game-container{
+    background-image: url('fb-game-background.png');
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    animation-name: skyScroll;
+    animation-duration: 10s;
+    background-repeat: repeat;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes skyScroll {
+    from {background-position:500px 0px;}
+    to {background-position:0px 0px;}
+}
+
+.OLDsky{
+    background-image: url('fb-game-background.png');
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    animation-name: skyScroll;
+}
+
+.ground{
+    background-image: url('bottom-background.png');
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: 3;
+}
+
+.bird{
+    background-image: url('flappy-bird-2.png');
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    z-index: 10;
+}
+
+.obstacle{
+background-image: url('flappybird.jpg');
+background-size: cover;
+width: 75px;
+height: 450px;
+position: absolute;
+z-index: 5;
+} 
+
